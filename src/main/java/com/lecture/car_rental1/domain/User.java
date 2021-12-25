@@ -39,11 +39,6 @@ public class User implements Serializable {
     @Column(nullable = false, length = 15)
     private String lastName;
 
-    @Size(min = 3, max = 15, message = "Please enter min 3 characters")
-    @NotNull(message = "Please enter your user name")
-    @Column(nullable = false, unique = true, updatable = false, length = 20)
-    private String username;
-
     @Size(min = 4, max = 60, message = "Please enter min 4 characters")
     @NotNull(message = "Please enter your password")
     @Column(nullable = false, length = 120)
@@ -66,11 +61,6 @@ public class User implements Serializable {
     @NotNull(message = "Please enter your address")
     @Column(nullable = false, length = 250)
     private String address;
-
-    @Size(max = 15)
-    @NotNull(message = "Please enter your city")
-    @Column(nullable = false, length = 15)
-    private String city;
 
     @Size(max = 15)
     @NotNull(message = "Please enter your zip code")

@@ -4,6 +4,7 @@ import com.lecture.car_rental1.domain.User;
 import com.lecture.car_rental1.exception.BadRequestException;
 import com.lecture.car_rental1.exception.ConflictException;
 import com.lecture.car_rental1.exception.ResourceNotFoundException;
+import com.lecture.car_rental1.projection.ProjectUser;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
