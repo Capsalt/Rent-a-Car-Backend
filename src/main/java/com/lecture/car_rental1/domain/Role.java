@@ -9,12 +9,12 @@ import lombok.Setter;
 import javax.persistence.*;
 import java.io.Serializable;
 
-@Getter
 @Setter
+@Getter
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name="roles")
+@Table(name = "roles")
 public class Role implements Serializable {
 
     @Id
@@ -24,4 +24,9 @@ public class Role implements Serializable {
     @Enumerated(EnumType.STRING)
     @Column(length = 30)
     private UserRole name;
+
+    @Override
+    public String toString() {
+        return "" + name + '}';
+    }
 }

@@ -1,6 +1,8 @@
 package com.lecture.car_rental1.dto;
 
 
+import com.lecture.car_rental1.domain.Car;
+import com.lecture.car_rental1.domain.FileDB;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;

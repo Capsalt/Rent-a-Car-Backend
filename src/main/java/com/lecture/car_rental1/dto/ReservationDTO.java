@@ -1,6 +1,8 @@
 package com.lecture.car_rental1.dto;
 
 
+import com.lecture.car_rental1.domain.Reservation;
+import com.lecture.car_rental1.domain.enumeration.ReservationStatus;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
