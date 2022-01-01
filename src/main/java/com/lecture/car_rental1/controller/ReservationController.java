@@ -2,7 +2,10 @@ package com.lecture.car_rental1.controller;
 
 
 
+import com.lecture.car_rental1.domain.Car;
+import com.lecture.car_rental1.domain.Reservation;
 import com.lecture.car_rental1.dto.ReservationDTO;
+import com.lecture.car_rental1.service.ReservationService;
 import lombok.AllArgsConstructor;
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.http.HttpStatus;

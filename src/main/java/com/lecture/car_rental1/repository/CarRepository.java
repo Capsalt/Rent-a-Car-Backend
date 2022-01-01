@@ -15,9 +15,9 @@ import java.util.Optional;
 @Transactional
 public interface CarRepository extends JpaRepository<Car, Long> {
 
-    @Query("SELECT new com.lecture.car_rental.dto.CarDTO(c) FROM Car c")
+    @Query("SELECT new com.lecture.car_rental1.dto.CarDTO(c) FROM Car c")
     List<CarDTO> findAllCar();
 
-    @Query("SELECT new com.lecture.car_rental.dto.CarDTO(c) FROM Car c WHERE c.id = ?1")
+    @Query("SELECT new com.lecture.car_rental1.dto.CarDTO(c) FROM Car c WHERE c.id = ?1")
     Optional<CarDTO> findCarByIdx(Long id) throws ResourceNotFoundException;
 }

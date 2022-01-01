@@ -1,6 +1,9 @@
 package com.lecture.car_rental1.controller;
 
 
+import com.lecture.car_rental1.domain.FileDB;
+import com.lecture.car_rental1.dto.FileDTO;
+import com.lecture.car_rental1.service.FileDBService;
 import lombok.AllArgsConstructor;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;

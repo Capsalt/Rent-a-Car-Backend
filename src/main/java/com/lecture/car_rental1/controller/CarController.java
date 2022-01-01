@@ -1,6 +1,9 @@
 package com.lecture.car_rental1.controller;
 
 
+import com.lecture.car_rental1.domain.Car;
+import com.lecture.car_rental1.dto.CarDTO;
+import com.lecture.car_rental1.service.CarService;
 import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
